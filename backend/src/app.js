@@ -19,10 +19,7 @@ app.use(cors({
 
 
 app.get("/",(req,res)=>{
-    res.send({
-      activeStatus:true,
-      error:false
-    });
+    res.send("hi");
 })
 app.use('/api/auth',authRoutes)
 app.use('/api/food',foodRoutes)
